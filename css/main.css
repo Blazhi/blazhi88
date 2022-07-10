@@ -643,9 +643,9 @@ a {
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-left: -30px;
+    flex-wrap: wrap;
   }
 }
 
@@ -662,6 +662,7 @@ a {
 @media screen and (min-width: 480px) {
   .team__item {
     margin-bottom: 30px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -672,8 +673,6 @@ a {
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc(25% - 30px);
-    width: 270px;
-    height: 428px;
   }
 }
 
@@ -699,6 +698,11 @@ a {
 .social-list {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .social-list {
+    margin-bottom: 24px;
+  }
 }
 
 .social-list__item {
@@ -844,8 +848,12 @@ a {
 
 .projects__list {
   margin: -15px;
-  display: flex;
-  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .projects__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects__item {
@@ -875,6 +883,7 @@ a {
 .projects__card {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .projects__cont {
@@ -930,6 +939,16 @@ a {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.footer__addres-container {
+  margin-bottom: 60px;
+}
+
 .footer__logo {
   display: block;
   color: var(--second-logo-color);
@@ -959,10 +978,6 @@ a {
 }
 .adress__link:hover, .adress__link:focus, .adress__link--maps:hover, .adress__link--maps:focus {
   color: var(--color-accent);
-}
-
-.footer-soc {
-  margin-left: 70px;
 }
 
 .footer-soc__tittle {
@@ -996,9 +1011,8 @@ a {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-bottom: 60px;
 }
-
 .subscibe__tittle {
   font-weight: 700;
   font-size: 14px;
