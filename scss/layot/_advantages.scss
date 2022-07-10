@@ -1,0 +1,57 @@
+.advantages-list{
+    /*display: flex;
+    justify-content: center;*/
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin-left: -30px;}
+}
+ 
+
+.advantages-list__item{
+    /*min-width: 270px;*/
+    
+    margin-bottom: var(--typical-gap);
+    @media screen and (min-width: 768px){
+        flex-basis:calc(50% - 30px);
+        margin-left: 30px;
+       }
+    @media screen and (min-width: 1200px){
+        flex-basis:calc(25% - 30px)
+    }
+}
+
+
+.advantages-list__cont{
+    height: 120px;
+    margin-bottom: var(--typical-gap);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: var(--team-background-color);
+    border-radius: 4px;
+}
+
+.advantages-list__tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-tittle-color);
+
+    margin-bottom: 10px;
+}
+
+.advantages-list__text{
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+}

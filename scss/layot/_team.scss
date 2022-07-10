@@ -1,0 +1,103 @@
+
+.team{
+    background-color: var(--team-background-color);
+    
+}
+.team__tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-tittle-color);
+
+    margin-bottom: 50px;
+}
+.team__list {
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -30px; 
+    }
+   
+}
+/*.team-item + .team-item{
+    margin-left: var(--typical-gap);
+}*/
+
+
+
+
+.team__item{
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    margin-left: 30px ;
+
+    @media screen and (min-width: 480px){
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px){
+        flex-basis:calc(50% - 30px);
+    }
+    @media screen and (min-width: 1200px){
+        flex-basis:calc(25% - 30px);
+        width: 270px;
+        height: 428px;
+    }
+}
+
+
+.team__name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-tittle-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team__post {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list__item{
+    margin-left: 10px;
+}
+.social-list__link {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;;
+    
+    transition: color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+            background-color: #2196F3;
+            color: #FFFFFF;
+        }
+}
+
+.social-list__icon{
+    fill:currentColor;
+}

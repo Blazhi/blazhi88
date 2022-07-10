@@ -1,0 +1,115 @@
+.hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--hero-background-color);
+    background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url(../images/hero_m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url(../images/hero_m2x.jpg);
+    }
+
+
+    @media screen and (min-width: 768px){
+      background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero_t.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url(../images/hero_t2x.jpg);
+    }
+    }
+
+    @media screen and (min-width: 1200px){
+      background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/hero_d.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+          background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),url(../images/hero_d2x.jpg);
+        }
+    }
+}
+
+
+
+.hero__container{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    @media screen and (min-width: 1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+       }
+}
+
+.hero__tittle{
+    font-weight: 900;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-tittle-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width:696px
+    }
+}
+
+.hero__btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    color: var(--first-btn-color);
+    display: inline-block;
+    background-color:var(--color-accent) ;
+    border: 1px solid var(--color-accent);
+
+    border-radius: 4px;
+    min-width: 200px;
+    padding: 10px 32px;
+    cursor: pointer;
+            &:hover,&:focus{
+                background-color: darkblue;
+            }
+}
+
+
+
+
+
+
+
+
