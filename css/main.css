@@ -938,15 +938,38 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+@media screen and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+  }
 }
 
-.footer__addres-container {
-  margin-bottom: 60px;
+.footer-container {
+  align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__addres-container {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -955,10 +978,11 @@ a {
   margin-bottom: 20px;
 }
 
-.adress__item {
-  margin-bottom: 9px;
+@media screen and (min-width: 1200px) {
+  .adress__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-
 .adress__link {
   font-weight: 400;
   font-size: 14px;
@@ -980,6 +1004,22 @@ a {
   color: var(--color-accent);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-soc {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-soc {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
+  }
+}
+
 .footer-soc__tittle {
   font-family: "Roboto";
   font-weight: 700;
@@ -993,7 +1033,17 @@ a {
 
 .footer-soc__list {
   display: flex;
-  align-items: baseline;
+}
+@media screen and (max-width: 767px) {
+  .footer-soc__list {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-soc__list {
+    align-items: baseline;
+  }
 }
 
 .footer-soc__item + .footer-soc__item {
@@ -1010,9 +1060,18 @@ a {
   fill: #FFFFFF;
 }
 
-.subscribe {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
+}
+
 .subscibe__tittle {
   font-weight: 700;
   font-size: 14px;
@@ -1025,7 +1084,8 @@ a {
 }
 
 .subscibe__email-input {
-  width: 358px;
+  width: 100%;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1033,6 +1093,11 @@ a {
   border-radius: 4px;
   padding-left: 16px;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .subscibe__email-input {
+    max-width: 358px;
+  }
 }
 
 .subscibe__btn {
@@ -1053,6 +1118,11 @@ a {
 }
 .subscibe__btn:hover, .subscibe__btn:focus {
   background-color: #212121;
+}
+@media screen and (max-width: 1200px) {
+  .subscibe__btn {
+    margin-top: 20px;
+  }
 }
 
 .subscibe__icon {

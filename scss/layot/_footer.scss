@@ -2,15 +2,37 @@
     background-color:var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 1200px){
+        text-align: center;
+    }
 }
 
 .footer-container{
-   display: flex;
-   align-items: baseline;
-   flex-wrap: wrap;
+    //display: flex;
+    align-items: baseline;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        padding-left: 61px;
+        padding-right: 74px;
+    }
+
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+
+    }
 }
+
 .footer__addres-container{
-    margin-bottom: 60px; 
+    @media screen and (max-width: 1199px){
+        margin-bottom: 60px;
+    }
 }
 
 .footer__logo{
@@ -18,8 +40,11 @@
     color: var(--second-logo-color);
     margin-bottom: 20px; 
 }
-.adress__item{
-    margin-bottom: 9px;
+
+@media screen and (min-width: 1200px){
+    .adress__item:not(:last-child){
+        margin-bottom: 9px;
+    }
 }
 
 .adress__link {
@@ -49,8 +74,20 @@
 
 
 .footer-soc{
-   // margin-left: 70px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px){
+        margin-left: 70px;
+    }
 }
+
+
 
 .footer-soc__tittle{
     font-family: 'Roboto';
@@ -65,7 +102,16 @@
 
 .footer-soc__list{
     display: flex;
-    align-items: baseline;
+    //align-items: baseline;
+
+    @media screen and (max-width: 767px){
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (min-width: 768px){
+        align-items: baseline;
+    }
+
 }
 
 .footer-soc__item + .footer-soc__item{
@@ -89,11 +135,14 @@
 
 
 .subscribe{
-   // margin-left: 93px;
-   margin-bottom: 60px;
-    @media screen and (min-width: 480px){
-        
+    @media screen and (min-width: 768px){
+        margin-left: auto;
+        margin-right: auto;
     }
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
+    }
+    
 }
 
 .subscibe__tittle{
@@ -108,7 +157,8 @@
 }
 
 .subscibe__email-input{
-    width: 358px;
+    width: 100%;
+    width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -116,6 +166,10 @@
     border-radius: 4px;
     padding-left: 16px;
     color: #FFFFFF;
+
+    @media screen and (min-width: 1200px){
+        max-width: 358px;
+    }
 }
 
 .subscibe__btn{
@@ -137,8 +191,11 @@
     transition: background-color var(--hover-focus-duration) cubic-bezier(0.4, 0, 0.2, 1);
            &:hover,
            &:focus{
-            background-color: #212121  ;
-}
+            background-color: #212121;}
+
+    @media screen and (max-width: 1200px){
+        margin-top: 20px;
+    }
 }
 
 .subscibe__icon{
